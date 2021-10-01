@@ -47,14 +47,14 @@ def in2post(expr):
     return post
 
 def calculator(string):
-    if not error_checking(string):
+    if error_checking(string):
         return 'некорректная последовательность!'
     stack = []
     for i in range(len(string)):
         if string[i] in '+-*/':
             arithmetic_action(stack, string[i])
         else:
-            stack.append(int(string[i]))
+            stack.append(float(string[i]))
     return stack[0]
 
 
