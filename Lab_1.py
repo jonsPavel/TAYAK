@@ -80,13 +80,13 @@ def my_isdigit(string):
 def error_checking(string):
     if len(string) % 2 == 0:
         return False
-    elif not string[0].isdigit() or not string[1].isdigit():
+    elif not my_isdigit(str(string[0])) or not my_isdigit(str(string[1])):
         return False
-    elif string[-1].isdigit():
+    elif my_isdigit(string[-1]):
         return False
     count = 1
     for i in range(2, len(string) - 1):
-        if string[i].isdigit():
+        if my_isdigit(string[i]):
             count += 1
         elif string[i] in '+-*/':
             count -= 1
