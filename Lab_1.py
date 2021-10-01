@@ -70,6 +70,12 @@ def arithmetic_action(stack, sign):
     else:
         stack.append(first_number / second_number)
 
+def my_isdigit(string):
+    for i in string:
+        if ord(i)<10 and ord(i)!=46:
+            return False
+    
+    return True     
 
 def error_checking(string):
     if len(string) % 2 == 0:
