@@ -1,0 +1,8 @@
+q0,a=q1
+q1,g=q4
+q1,b=q2
+q3,a=f0
+q2,c=q3
+q2,d=f0
+q4,b=q3
+q4,a=q0
